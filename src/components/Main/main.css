@@ -102,7 +102,9 @@
     background: transparent;
     border: none;
     outline: none;
-    padding: 18px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 200;
 }
 
 .search-box div {
@@ -176,5 +178,21 @@
     font-size: 17px;
     font-weight: 300;
     line-height: 1.8;
+}
 
+@media (max-width: 600px) {
+    .main-bottom input {
+        flex: none;
+        width: 150px;
+    }
+    .main-bottom img {
+        width: 20px;
+    }
+
+    .search-box {
+        padding: 5px 10px;
+    }
+    .search-box div {
+        gap: 5px;
+    }
 }
